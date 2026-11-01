@@ -1,0 +1,47 @@
+:root { font-family: Inter, "Microsoft YaHei", system-ui, sans-serif; color: #183b36; background: #f5f6f1; font-synthesis: none; line-height: 1.65; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1080px; padding: 0 40px; margin: auto; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 28px 0; border-bottom: 1px solid #d8dfd6; }
+.brand { color: inherit; text-decoration: none; font-size: 21px; font-weight: 750; letter-spacing: -.6px; }
+.brand span { font-weight: 400; font-size: 14px; margin-left: 12px; color: #62756e; }
+.lesson, .eyebrow { font-size: 12px; letter-spacing: 2px; color: #62756e; }
+.intro { padding: 48px 0 32px; max-width: 680px; }
+.eyebrow { margin: 0 0 14px; }
+h1 { font-size: clamp(36px, 5vw, 60px); line-height: 1.2; letter-spacing: -2px; margin: 0 0 20px; font-weight: 650; }
+.description { max-width: 560px; color: #62756e; font-size: 15px; }
+.workspace { background: #fff; border: 1px solid #d8dfd6; border-radius: 12px; overflow: hidden; }
+form, .reply { padding: 26px 30px; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; font-size: 14px; font-weight: 600; }
+.section-heading span { font-size: 12px; font-weight: 400; color: #62756e; }
+textarea, input, button { font: inherit; }
+textarea { width: 100%; resize: vertical; border: 1px solid #d8dfd6; border-radius: 7px; padding: 16px; color: #183b36; font-size: 15px; background: #fcfdfb; }
+textarea:focus, input:focus { outline: 2px solid #7eb099; outline-offset: 2px; }
+button { cursor: pointer; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+.examples { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 12px 0 18px; }
+.examples button { color: #5e756b; background: transparent; border: 0; padding: 0; font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.form-footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.form-footer span { font-size: 12px; color: #78857e; }
+.send { border: 0; border-radius: 6px; padding: 11px 22px; color: white; background: #23644f; white-space: nowrap; }
+.reply { border-top: 1px solid #e1e6dd; background: #f9fbf7; min-height: 165px; }
+h2 { font-size: 14px; margin: 0; }
+.muted { color: #7b887f; font-size: 14px; }
+.asked { font-size: 12px; color: #62756e; padding-bottom: 12px; border-bottom: 1px solid #e1e6dd; }
+.answer { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 15px; }
+.error { color: #a53226; overflow-wrap: anywhere; }
+.settings { margin-top: 24px; color: #62756e; font-size: 13px; }
+summary { cursor: pointer; }
+.settings p { max-width: 660px; }
+.settings label { display: block; margin-top: 12px; }
+input { display: block; width: 100%; padding: 12px; border: 1px solid #d8dfd6; border-radius: 5px; margin-top: 10px; }
+.chat-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 24px; border-bottom: 1px solid #e1e6dd; font-size: 13px; }
+.chat-toolbar button { background: none; color: #5e756b; border: 0; font-size: 12px; padding: 4px 8px; }
+.conversation { max-height: 480px; min-height: 160px; overflow-y: auto; padding: 12px 26px; }
+.message { padding: 18px 0; border-bottom: 1px solid #edf0e9; }
+.message h2 { margin-bottom: 8px; color: #62756e; }
+.message.user .answer { color: #52675d; }
+.composer { border-top: 1px solid #e1e6dd; background: #f9fbf7; }
+.composer textarea { margin: 10px 0 12px; }
+footer { display: flex; justify-content: space-between; gap: 16px; color: #7b887f; font-size: 11px; padding: 30px 0; }
+@media (max-width: 600px) { main { padding: 0 20px; } .lesson { display: none; } .intro { padding-top: 34px; } form, .reply { padding: 20px; } .form-footer { align-items: flex-start; flex-direction: column; } .send { width: 100%; } footer { flex-direction: column; gap: 3px; } }
